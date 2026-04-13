@@ -215,8 +215,14 @@ async function readStudents() {
   console.log(all);
 }
 
-readStudents();
+//readStudents();
 // create document
+async function updateStudent() {
+  await Student.updateOne({ name: "Ali" }, { age: 22 });
+  console.log("✅ Updated Ali");
+}
+
+updateStudent();
 
 
 // read document
