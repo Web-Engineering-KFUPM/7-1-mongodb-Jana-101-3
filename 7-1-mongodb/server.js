@@ -209,8 +209,13 @@ async function createStudents() {
   console.log("✅ Inserted");
 }
 
-createStudents();
+//createStudents();
+async function readStudents() {
+  const all = await Student.find();
+  console.log(all);
+}
 
+readStudents();
 // create document
 
 
